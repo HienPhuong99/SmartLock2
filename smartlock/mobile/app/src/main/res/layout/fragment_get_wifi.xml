@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.GetWifiFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="25dp"
+        app:cardCornerRadius="40dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/line1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/colorBlue"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="WIFI AVAILABLE"
+                android:fontFamily="sans-serif"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/wifi_list_recycleView"
+                android:layout_width="341dp"
+                android:layout_height="344dp"
+                android:layout_above="@+id/tv_wifi_ssid"
+                android:layout_below="@+id/tv5"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp" />
+
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="100dp"
+                android:layout_height="38dp"
+                android:layout_above="@+id/ed_wifi_password"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:hint="Bạn đã chọn: "
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/tv_wifi_ssid"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_above="@+id/ed_wifi_password"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/tv4" />
+
+            <EditText
+                android:id="@+id/ed_wifi_password"
+                android:layout_width="300dp"
+                android:layout_height="54dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="45dp"
+                android:background="@drawable/bogocne"
+                android:gravity="center"
+                android:hint="Điền mật khẩu wifi"
+                android:inputType="textPassword"
+                android:textColorHighlight="@color/colorBlack"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/img_wifi_password_show"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignTop="@+id/ed_wifi_password"
+                android:layout_alignEnd="@+id/ed_wifi_password"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ic_visibility_black_24dp" />
+            <ImageView
+                android:id="@+id/img_wifi_password_off"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignTop="@+id/ed_wifi_password"
+                android:layout_alignEnd="@+id/ed_wifi_password"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:visibility="invisible"
+                android:background="@drawable/ic_visibility_off_black_24dp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</FrameLayout>

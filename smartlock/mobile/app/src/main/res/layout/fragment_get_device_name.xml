@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.GetDeviceNameFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="308dp"
+        android:layout_height="372dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="130dp"
+            android:layout_height="208dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="99dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="95dp"
+            android:background="@drawable/ic_lyoko">
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/add_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_below="@+id/logo"
+            android:layout_alignStart="@+id/logo"
+            android:layout_alignEnd="@+id/logo"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="-77dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="-78dp"
+            android:layout_marginBottom="27dp"
+            android:background="@drawable/bogocne"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:hint="Nhập tên cho ổ khóa"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColorHighlight="@color/colorBlack"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEven"
+    android:id="@+id/history_list_layout"
+    tools:context=".Activities.HistoryActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/history_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:paddingTop="70dp"
+        android:paddingStart="30dp"
+        android:layout_alignParentTop="true"
+        app:titleTextColor="@color/colorWhite"
+        android:background="@drawable/background_toolbar"
+        app:theme="@style/ToolbarColoredBackArrow"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/history_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/history_toolbar"/>
+
+</RelativeLayout>

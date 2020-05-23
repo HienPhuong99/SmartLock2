@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "369897912985",
+    "firebase_url": "https://lyoko-smartlock.firebaseio.com",
+    "project_id": "lyoko-smartlock",
+    "storage_bucket": "lyoko-smartlock.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369897912985:android:e4221917b83e33a4755608",
+        "android_client_info": {
+          "package_name": "com.lyoko.smartlock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369897912985-8ulnj24d6r5637tunksfdbsjt8c8qsud.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmeres19OwIMH9HDQHIL9MJ38GT5E8DEs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369897912985-8ulnj24d6r5637tunksfdbsjt8c8qsud.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

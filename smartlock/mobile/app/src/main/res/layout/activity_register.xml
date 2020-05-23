@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimary"
+    android:padding="40dp"
+    tools:context=".Activities.RegisterActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        android:text="Tạo mật khẩu (Gồm 6 chữ số)"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Lưu ý đây cũng là mã pin \n để đăng nhập vào Smart Lock"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite" />
+
+    <EditText
+        android:id="@+id/et_ownerName"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@+id/tv2"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/bogocne"
+        android:gravity="center"
+        android:hint="Nhập tên của bạn"
+        android:inputType="text"
+        android:maxLength="12"
+        android:textColorHighlight="@color/colorBlack"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@+id/et_ownerName"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bogocne"
+        android:gravity="center"
+        android:hint="Nhập mật khẩu"
+        android:inputType="numberPassword"
+        android:ellipsize="start"
+        android:maxLength="6"
+        android:textColorHighlight="@color/colorBlack"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/et_password_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@+id/et_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:background="@drawable/bogocne"
+        android:gravity="center"
+        android:maxLength="6"
+        android:hint="Nhập lại mật khẩu"
+        android:inputType="numberPassword"
+        android:ellipsize="start"
+        android:textColorHighlight="@color/colorBlack" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password_confirm"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bogocne"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="Tiếp tục"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorWhite"
+        android:text="By Smart Lock" />
+
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddDeviceActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/main_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/find_lock_background"
+        android:elevation="1.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <FrameLayout
+            android:id="@+id/add_lock_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:layout_width="180dp"-->
+        <!--            android:layout_height="180dp"-->
+        <!--            android:layout_alignParentTop="true"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_marginTop="230dp"-->
+        <!--            android:background="@drawable/background_lock"-->
+        <!--            android:elevation="1.5dp"-->
+        <!--            android:gravity="center">-->
+
+
+        <!--            <ImageView-->
+        <!--                android:id="@+id/img_find_device"-->
+        <!--                android:background="@drawable/ic_add_lock"-->
+        <!--                android:layout_width="120dp"-->
+        <!--                android:layout_height="120dp"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_next_step"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/lock_button_background"
+        android:elevation="1.3dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="NEXT"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"></Button>
+
+    <TextView
+        android:id="@+id/add_lock_step"
+        android:layout_width="269dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/STEP_1"
+        app:layout_constraintEnd_toEndOf="@+id/btn_next_step"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/btn_next_step"
+        app:layout_constraintTop_toBottomOf="@+id/btn_next_step" />
+
+    <TextView
+        android:id="@+id/add_lock_description"
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/STEP_DESCRIPTION_1"
+        app:layout_constraintEnd_toEndOf="@+id/add_lock_step"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/add_lock_step"
+        app:layout_constraintTop_toBottomOf="@+id/add_lock_step">
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

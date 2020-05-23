@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimary"
+    android:padding="40dp"
+    tools:context=".Activities.CheckPhoneNumberActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:text="Nhập số điện thoại"
+        android:textColor="@color/colorWhite"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Dùng số điện thoại để đăng kí hoặc \n đăng nhập vào Smart Lock"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite" />
+
+    <EditText
+        android:id="@+id/et_phoneNumForCheck"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_below="@+id/tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:background="@drawable/bogocne"
+        android:gravity="center"
+        android:maxLength="10"
+        android:hint="Nhập số điện thoại"
+        android:inputType="number"
+        android:textColorHighlight="@color/colorBlack" />
+
+    <Button
+        android:id="@+id/btn_checkPhoneNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_phoneNumForCheck"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bogocne"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="Tiếp tục"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorWhite"
+        android:text="By Smart Lock" />
+
+
+</RelativeLayout>

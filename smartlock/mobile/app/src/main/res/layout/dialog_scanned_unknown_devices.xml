@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="25dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <TextView
+            android:id="@+id/tv10"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorLynWhite"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="20dp"
+            android:text="Thêm thiết bị tin cậy"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlueNight"
+            android:textSize="14dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/unknown_device_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="10dp"
+            android:layout_below="@id/tv10"
+            android:layout_above="@id/line9"/>
+
+        <TextView
+            android:id="@+id/tv_nothing_to_show"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlueNight"
+            android:textSize="14dp"
+            android:text="Không có thiết bị phù hợp"/>
+        <LinearLayout
+            android:id="@+id/line9"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorLynWhite"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_rescan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Tìm lại"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/tv_add_trusted_device_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="thêm"
+                android:textAllCaps="true" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+

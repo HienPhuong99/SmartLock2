@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#74b9ff</color>
+    <color name="colorPrimaryDark">#0984e3</color>
+    <color name="colorLocked">#f95843</color>
+    <color name="colorUnLocked">#2ecc71</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGray">#8D8C8C</color>
+    <color name="colorBlueSoda">#7f8fa6</color>
+    <color name="colorBlueNight">#353b48</color>
+    <color name="colorLynWhite">#f5f6fa</color>
+    <color name="colorBlue">#3498db</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlueSky">#2E64FE</color>
+    <color name="colorEven">#dff9fb</color>
+    <color name="colorOdd">#7ed6df</color>
+    <color name="colorDrakBlue">#0097e6</color>
+    <color name="colorCameraBackground">#9A000000</color>
+
+
+</resources>

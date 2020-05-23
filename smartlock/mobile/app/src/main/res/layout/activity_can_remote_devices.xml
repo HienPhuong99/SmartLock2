@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CanRemoteDevicesActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/can_remote_devices_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/background_toolbar"
+        android:paddingStart="30dp"
+        android:paddingTop="70dp"
+        app:theme="@style/ToolbarColoredBackArrow"
+        app:titleTextColor="@color/colorWhite" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/can_remote_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/can_remote_devices_toolbar"
+        android:layout_marginTop="1dp"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="10dp" />
+
+    <Button
+        android:id="@+id/btn_scan_qr"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/cardview_bg"
+        android:text="quét mã qr"
+        android:textAllCaps="true"
+        android:textColor="@color/colorBlueNight"
+        android:drawableLeft="@drawable/ic_scan_qr_50dp"
+        android:paddingStart="60dp"
+        android:textSize="17dp"></Button>
+
+
+
+</RelativeLayout>

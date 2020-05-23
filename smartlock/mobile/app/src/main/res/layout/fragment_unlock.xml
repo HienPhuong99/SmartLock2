@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.LockedFragment">
+
+    <RelativeLayout
+        android:id="@+id/main_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/unlock_background"
+        android:elevation="1.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:id="@+id/hold_bg"
+            android:layout_centerInParent="true"
+            android:background="@drawable/background_lock"
+            android:elevation="1.5dp"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/img_unlocked"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/ic_unlocked"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.32" />
+
+            <TextView
+                android:id="@+id/tv_state_lock_info"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:text="UNLOCKED"
+                android:textColor="@color/colorUnLocked"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/img_unlocked"
+                app:layout_constraintVertical_bias="0.88">
+
+            </TextView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
